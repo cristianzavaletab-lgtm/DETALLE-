@@ -31,5 +31,6 @@ lerna-debug.log*
 *.swo
 *~
 
-# Vercel
-.vercel
+# Netlify
+.netlify
+.netlify.toml.backupnder/

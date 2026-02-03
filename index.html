@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti</title>
+    <meta name="description" content="Porque hay personas que merecen gestos pensados con calma">
+
+    <!-- Tipografías desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <!-- Hay gestos que no necesitan palabras elaboradas -->
+    <!-- Solo necesitan ser sinceros -->
+
+    <!-- SECCIÓN 1: Entrada sutil -->
+    <section class="section section-welcome" id="welcome">
+        <div class="content-center">
+            <h1 class="title-main fade-in">Hola.</h1>
+            <p class="subtitle fade-in delay-1">Hice esto pensando en ti.</p>
+            <p class="subtitle-small fade-in delay-2">No es gran cosa. Solo quería que lo supieras.</p>
+            <button class="btn-continue fade-in delay-3" id="startBtn">Seguir leyendo</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: Observación genuina -->
+    <section class="section section-observation" id="observation">
+        <div class="content-center">
+            <p class="typing-text" id="typing1"></p>
+            <p class="typing-text" id="typing2"></p>
+            <p class="typing-text" id="typing3"></p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: Lo que admiro -->
+    <section class="section section-admiration" id="admiration">
+        <div class="content-center">
+            <p class="intro-admiration scroll-reveal">Hay cosas de ti que me parecen hermosas:</p>
+
+            <div class="phrase-container">
+                <p class="admiration-phrase scroll-reveal delay-1">
+                    La forma en que prestas atención a lo que otros pasan por alto.
+                </p>
+            </div>
+
+            <div class="phrase-container">
+                <p class="admiration-phrase scroll-reveal delay-2">
+                    Cómo haces que las cosas simples se sientan especiales.
+                </p>
+            </div>
+
+            <div class="phrase-container">
+                <p class="admiration-phrase scroll-reveal delay-3">
+                    La calma que traes, incluso sin decir nada.
+                </p>
+            </div>
+
+            <div class="phrase-container">
+                <p class="admiration-phrase scroll-reveal delay-4">
+                    Esa risa tuya que hace que todo parezca más ligero.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: Momento de pausa -->
+    <section class="section section-interaction" id="interaction">
+        <div class="content-center">
+            <p class="main-text scroll-reveal">Este momento es tuyo.</p>
+            <p class="secondary-text scroll-reveal delay-1">Sin prisa. Sin expectativas.</p>
+            <p class="tertiary-text scroll-reveal delay-2">Solo decirte que me importas mucho.</p>
+            <div class="interactive-element" id="interactiveElement">
+                <p class="hover-text">Pasa el cursor aquí</p>
+                <p class="hidden-message" id="hiddenMessage">Y que eres importante para mí. ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: Intención -->
+    <section class="section section-intention" id="intention">
+        <div class="content-center">
+            <p class="intention-text scroll-reveal">
+                No necesito que esto sea correspondido.
+            </p>
+            <p class="intention-text scroll-reveal delay-1">
+                Solo quería que existiera.
+            </p>
+            <p class="intention-text scroll-reveal delay-2">
+                Porque conocer a alguien como tú merece más que un "me caes bien".
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6: Cierre genuino -->
+    <section class="section section-closing" id="closing">
+        <div class="content-center">
+            <p class="closing-main scroll-reveal">
+                Que no nos separe la distancia .
+            </p>
+            <p class="closing-main scroll-reveal delay-1">
+                Tal vez sigamos siendo amigos, tal vez algo más, tal vez la vida nos lleve por caminos distintos.
+            </p>
+            <p class="closing-secondary scroll-reveal delay-2">
+                Pero hoy, en este momento, quería que supieras esto:
+            </p>
+            <p class="closing-emphasis scroll-reveal delay-3">
+                Me alegra que existas.
+            </p>
+            <p class="closing-emphasis scroll-reveal delay-4">
+                Y me alegra conocerte.
+            </p>
+
+            <button class="btn-final scroll-reveal delay-5" id="finalBtn">Continuar</button>
+
+            <div class="farewell-container" id="farewellContainer">
+                <p class="farewell scroll-reveal">Gracias por tomarte el tiempo de leer esto.</p>
+                <p class="farewell scroll-reveal delay-1">Que tengas una hermosa noche, como tú lo eres.</p>
+                <p class="signature scroll-reveal delay-2">— Cris¡! ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio de ambiente (opcional) -->
+    <audio id="backgroundMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Control de música (opcional) -->
+    <button class="music-toggle" id="musicToggle" aria-label="Control de música">
+        <span class="music-icon">♪</span>
+    </button>
+
+    <!-- TransiciÃ³n entre pantallas -->
+    <div class="screen-transition" aria-hidden="true"></div>
+
+    <script src="Main.js"></script>
+</body>
+
+</html>
